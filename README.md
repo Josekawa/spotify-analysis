@@ -30,7 +30,15 @@ An exploratory data analysis project using Microsoft Excel to uncover insights f
 
 ## 📊 Project Structure
 
-<pre><code>```markdown spotify-analysis/ ├── data/ # Raw and cleaned datasets ├── dashboards/ # Excel dashboards and visuals ├── notebooks/ # (Optional) Notes or logic in Jupyter/markdown ├── README.md # Project overview └── .gitignore ``` </code></pre>
+```text
+spotify-analysis/
+├── data/       # Raw dataset
+├── dashboards/ # Excel dashboards and visuals
+├── reports/
+├── scripts/    # Python utilities
+└── README.md
+```
+
 
 ---
 
@@ -39,6 +47,14 @@ An exploratory data analysis project using Microsoft Excel to uncover insights f
 - Which tracks are the most popular across genres?
 - How do audio features vary between genres or years?
 - What correlations exist between energy, tempo, and popularity?
+
+## 🐍 Python Analysis
+
+A small utility script is provided in `scripts/hiphop_analysis.py` to explore Hip-Hop tracks using the built-in `csv` module. It computes average audio features and lists the most popular songs. Run it with:
+
+```bash
+python scripts/hiphop_analysis.py
+```
 
 ---
 
